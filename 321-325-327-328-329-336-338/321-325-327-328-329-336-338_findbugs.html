@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>FindBugs Report</title>
+        <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+    </head>
+    <body>
+        <h1>FindBugs Report</h1>
+        <p>
+            Produced using 
+            <a href="http://findbugs.sourceforge.net">FindBugs</a>
+            3.0.1.
+        </p>
+        <p>Project: 
+			Java[Java]</p>
+        <h2>Metrics</h2>
+        <p>9486 lines of code analyzed,
+	in 262 classes, 
+	in 7 packages.</p>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Metric</th>
+                <th align="right">Total</th>
+                <th align="right">Density*</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>High Priority Warnings</td>
+                <td align="right">2</td>
+                <td align="right">0.21</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>Medium Priority Warnings</td>
+                <td align="right">16</td>
+                <td align="right">1.69</td>
+            </tr>
+            <tr class="$totalClass">
+                <td>
+                    <b>Total Warnings</b>
+                </td>
+                <td align="right">
+                    <b>18</b>
+                </td>
+                <td align="right">
+                    <b>1.90</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Summary</h2>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Warning Type</th>
+                <th align="right">Number</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+                </td>
+                <td align="right">4</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+                </td>
+                <td align="right">14</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <b>Total</b>
+                </td>
+                <td align="right">
+                    <b>18</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h1>Warnings</h1>
+        <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+        <h2>
+            <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_PKGPROTECT">Field should be package protected</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.badPublicStatic should be package protected
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java,
+					
+						line 28
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.badPublicStatic
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java:[line 28]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_PKGPROTECT">Field should be package protected</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.goodG2B1PublicStatic should be package protected
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java,
+					
+						line 53
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.goodG2B1PublicStatic
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java:[line 53]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_PKGPROTECT">Field should be package protected</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.goodG2B2PublicStatic should be package protected
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java,
+					
+						line 54
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.goodG2B2PublicStatic
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java:[line 54]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_PKGPROTECT">Field should be package protected</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.data should be package protected
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_68a.java,
+					
+						lines 
+						    to 
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.data
+                        <br />
+                        In CWE321_Hard_Coded_Cryptographic_Key__basic_68a.java
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_STYLE">Dodgy code Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        Write to static field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.badPublicStatic from instance method testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.bad()
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java,
+					
+						line 34
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a
+                        <br />
+                        In method testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.bad()
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_22a.badPublicStatic
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java:[line 34]
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_22a.java:[line 34]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        Write to static field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.data from instance method testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.bad()
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_68a.java,
+					
+						line 34
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a
+                        <br />
+                        In method testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.bad()
+                        <br />
+                        Field testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_68a.data
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_68a.java:[line 34]
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_68a.java:[line 34]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_12.goodG2B() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE321_Hard_Coded_Cryptographic_Key__basic_12.java,
+					
+						lines 83
+						    to 95
+                        <br />
+                        In class testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_12
+                        <br />
+                        In method testcases.CWE321_Hard_Coded_Cryptographic_Key.CWE321_Hard_Coded_Cryptographic_Key__basic_12.goodG2B()
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_12.java:[lines 83-95]
+                        <br />
+                        At CWE321_Hard_Coded_Cryptographic_Key__basic_12.java:[lines 101-114]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12.java,
+					
+						lines 79
+						    to 90
+                        <br />
+                        In class testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12
+                        <br />
+                        In method testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12.good1()
+                        <br />
+                        At CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12.java:[lines 79-90]
+                        <br />
+                        At CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_12.java:[lines 94-111]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12.java,
+					
+						lines 52
+						    to 57
+                        <br />
+                        In class testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12
+                        <br />
+                        In method testcases.CWE325_Missing_Required_Cryptographic_Step.CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12.good1()
+                        <br />
+                        At CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12.java:[lines 52-57]
+                        <br />
+                        At CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_12.java:[lines 61-68]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__3DES_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE327_Use_Broken_Crypto__3DES_12.java,
+					
+						lines 75
+						    to 87
+                        <br />
+                        In class testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__3DES_12
+                        <br />
+                        In method testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__3DES_12.good1()
+                        <br />
+                        At CWE327_Use_Broken_Crypto__3DES_12.java:[lines 75-87]
+                        <br />
+                        At CWE327_Use_Broken_Crypto__3DES_12.java:[lines 91-109]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__DES_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE327_Use_Broken_Crypto__DES_12.java,
+					
+						lines 75
+						    to 87
+                        <br />
+                        In class testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__DES_12
+                        <br />
+                        In method testcases.CWE327_Use_Broken_Crypto.CWE327_Use_Broken_Crypto__DES_12.good1()
+                        <br />
+                        At CWE327_Use_Broken_Crypto__DES_12.java:[lines 75-87]
+                        <br />
+                        At CWE327_Use_Broken_Crypto__DES_12.java:[lines 91-109]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD2_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE328_Reversible_One_Way_Hash__MD2_12.java,
+					
+						lines 53
+						    to 58
+                        <br />
+                        In class testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD2_12
+                        <br />
+                        In method testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD2_12.good1()
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__MD2_12.java:[lines 53-58]
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__MD2_12.java:[lines 62-68]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD5_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE328_Reversible_One_Way_Hash__MD5_12.java,
+					
+						lines 53
+						    to 58
+                        <br />
+                        In class testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD5_12
+                        <br />
+                        In method testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__MD5_12.good1()
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__MD5_12.java:[lines 53-58]
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__MD5_12.java:[lines 62-68]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__SHA1_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE328_Reversible_One_Way_Hash__SHA1_12.java,
+					
+						lines 53
+						    to 58
+                        <br />
+                        In class testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__SHA1_12
+                        <br />
+                        In method testcases.CWE328_Reversible_One_Way_Hash.CWE328_Reversible_One_Way_Hash__SHA1_12.good1()
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__SHA1_12.java:[lines 53-58]
+                        <br />
+                        At CWE328_Reversible_One_Way_Hash__SHA1_12.java:[lines 62-68]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE329_Not_Using_Random_IV_with_CBC_Mode.CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12.java,
+					
+						lines 80
+						    to 93
+                        <br />
+                        In class testcases.CWE329_Not_Using_Random_IV_with_CBC_Mode.CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12
+                        <br />
+                        In method testcases.CWE329_Not_Using_Random_IV_with_CBC_Mode.CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12.good1()
+                        <br />
+                        At CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12.java:[lines 80-93]
+                        <br />
+                        At CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_12.java:[lines 97-115]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE336_Same_Seed_in_PRNG.CWE336_Same_Seed_in_PRNG__basic_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE336_Same_Seed_in_PRNG__basic_12.java,
+					
+						lines 53
+						    to 57
+                        <br />
+                        In class testcases.CWE336_Same_Seed_in_PRNG.CWE336_Same_Seed_in_PRNG__basic_12
+                        <br />
+                        In method testcases.CWE336_Same_Seed_in_PRNG.CWE336_Same_Seed_in_PRNG__basic_12.good1()
+                        <br />
+                        At CWE336_Same_Seed_in_PRNG__basic_12.java:[lines 53-57]
+                        <br />
+                        At CWE336_Same_Seed_in_PRNG__basic_12.java:[lines 61-66]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__math_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE338_Weak_PRNG__math_12.java,
+					
+						lines 48
+						    to 50
+                        <br />
+                        In class testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__math_12
+                        <br />
+                        In method testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__math_12.good1()
+                        <br />
+                        At CWE338_Weak_PRNG__math_12.java:[lines 48-50]
+                        <br />
+                        At CWE338_Weak_PRNG__math_12.java:[lines 55-57]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__util_12.good1() uses the same code for two branches
+                        <br />
+                        <br />
+                        <br />
+                        In file CWE338_Weak_PRNG__util_12.java,
+					
+						lines 51
+						    to 53
+                        <br />
+                        In class testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__util_12
+                        <br />
+                        In method testcases.CWE338_Weak_PRNG.CWE338_Weak_PRNG__util_12.good1()
+                        <br />
+                        At CWE338_Weak_PRNG__util_12.java:[lines 51-53]
+                        <br />
+                        At CWE338_Weak_PRNG__util_12.java:[lines 58-60]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h1>
+            <a name="Details">Warning Types</a>
+        </h1>
+        <h2>
+            <a name="DB_DUPLICATE_BRANCHES">Method uses the same code for two branches</a>
+        </h2>
+              
+      <p>
+      This method uses the same code to implement two branches of a conditional branch.
+    Check to ensure that this isn't a coding mistake.
+      </p>
+      
+   
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="MS_PKGPROTECT">Field should be package protected</a>
+        </h2>
+          <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+        </h2>
+          <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+    </body>
+</html>
